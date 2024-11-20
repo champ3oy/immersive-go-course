@@ -472,7 +472,7 @@ Make sure all error messages are clear and useful to the user, that we're proper
 
 #### Creating the program
 
-We'll create the program in the same directory as this README.md file. In a terminal, `cd` to this directory, and run `go mod init github.com/CodeYourFuture/immersive-go-course/projects/output-and-error-handling`. This will create a `go.mod` file (which indicates a Go program lives here). Then we will need to manually create a `main.go` file and start writing our program in it.
+We'll create the program in the same directory as this README.md file. In a terminal, `cd` to this directory, and run `go mod init github.com/champ3oy/immersive-go-course/projects/output-and-error-handling`. This will create a `go.mod` file (which indicates a Go program lives here). Then we will need to manually create a `main.go` file and start writing our program in it.
 
 #### time.Sleep
 
