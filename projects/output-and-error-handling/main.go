@@ -25,12 +25,13 @@ func getWeather(maxAttempt int) error {
 	if maxAttempt >= 3 {
 		return fmt.Errorf("max attempts allowed reached : %v", maxAttempt)
 	}
+
 	resp, err := http.Get(url)
 	if err != nil {
 		return fmt.Errorf("http request or connection failed  or dropped: %v", err)
 	}
-
 	defer resp.Body.Close()
+
 	if resp.StatusCode == 429 {
 		retryTime, err := strconv.Atoi(resp.Header.Get("Retry-After"))
 		if err != nil {
